@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -17,11 +18,11 @@ public class GameDataController {
 	public Message defaultCase() {
 		return new Message("GameData api");
 	}
-/*
-	@GetMapping("/api/gameData/:userId")
-    public @ResponseBody Iterable<User> getAllUsers() {
+
+	@GetMapping("/api/gameData/{userId}")
+    public @ResponseBody Iterable<GameData> getAllUsers(@PathVariable(value="userId") int userId) {
 	    // This returns a JSON or XML with the users
-	    return gameDataRepository.find(userId);
+	    return gameDataRepository.findByUserid(userId);
 	}
-	*/
+	
 }
