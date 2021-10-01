@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+div.scrollListDiv {
+  background-color: lightblue;
+  border-radius: 5px;
+  overflow: auto;
+  height: 300px;
+}
+
+div.gameDataItemDiv {
+  background-color: lightblue;
+  border-radius: 5px;
+  overflow: auto;
+  padding: 5px;
+  color: black
+}
+
+div.gameDataDisplayDiv {
+  font-size: 80%;
+  text-align: left;
+}
+
+span.gameDataDisplayBold {
+  font-weight: bold;
+}
+
+div.gameDataHeader {
+  font-weight: bold;
+  height: 20px;
+}
+
+div.gameDataGridDisplayDiv {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+button.userListItemDiv {
+  width: 90%;
+}
