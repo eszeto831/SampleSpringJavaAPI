@@ -1,5 +1,5 @@
 # SampleSpringJavaAPI
-Full Stack example using Java, Spring
+Full Stack example using Java, Spring, React
 
 ## Frontend URL
 https://testspringjava.uc.r.appspot.com/
