@@ -12,7 +12,7 @@ function App() {
   const [currentUserGameData, setCurrentUserGameData] = React.useState(null);
   const [currentUserGameDataLoading, setCurrentUserGameDataLoading] = React.useState(false);
 
-  const api_url = "https://nodejstest-326900.uc.r.appspot.com";
+  const api_url = "https://testspringjava.uc.r.appspot.com/";
 
   React.useEffect(() => {
     fetch(api_url+"/api")
