@@ -1,6 +1,5 @@
 package com.seatoadgames.SampleSpringJavaAPI;
 
-import java.util.List;
 import org.springframework.data.repository.CrudRepository;
 
 import com.seatoadgames.SampleSpringJavaAPI.GameData;
@@ -10,5 +9,5 @@ import com.seatoadgames.SampleSpringJavaAPI.GameData;
 
 public interface GameDataRepository extends CrudRepository<GameData, Integer> {
 
-	List<GameData> findByUserid(int id);
+	GameData findByUserid(int id);
 }

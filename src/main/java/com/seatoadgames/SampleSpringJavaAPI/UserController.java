@@ -14,13 +14,13 @@ public class UserController {
 	private UserRepository userRepository;
 
 	@GetMapping("/api/users")
-	public Message defaultCase() {
-		return new Message("User api");
+	public MessageResponse defaultCase() {
+		return new MessageResponse("User api");
 	}
 
 	@GetMapping("/api/users/list")
-    public @ResponseBody Iterable<User> getAllUsers() {
+    public UserListResponse getAllUsers() {
 	    // This returns a JSON or XML with the users
-	    return userRepository.findAll();
+	    return new UserListResponse(userRepository.findAll());
 	}
 }

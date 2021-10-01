@@ -15,14 +15,14 @@ public class GameDataController {
 	private GameDataRepository gameDataRepository;
 
 	@GetMapping("/api/gameData")
-	public Message defaultCase() {
-		return new Message("GameData api");
+	public MessageResponse defaultCase() {
+		return new MessageResponse("GameData api");
 	}
 
 	@GetMapping("/api/gameData/{userId}")
-    public @ResponseBody Iterable<GameData> getAllUsers(@PathVariable(value="userId") int userId) {
+    public GameDataResponse getUserGameData(@PathVariable(value="userId") int userId) {
 	    // This returns a JSON or XML with the users
-	    return gameDataRepository.findByUserid(userId);
+	    return new GameDataResponse(gameDataRepository.findByUserid(userId));
 	}
 	
 }

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DefaultController {
 	
 	@GetMapping("/api")
-	public Message defaultApiCase() {
-		return new Message("Hello from server API!");
+	public MessageResponse defaultApiCase() {
+		return new MessageResponse("Hello from server API!");
 	}
 }

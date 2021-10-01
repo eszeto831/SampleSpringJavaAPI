@@ -1,10 +1,10 @@
 package com.seatoadgames.SampleSpringJavaAPI;
 
-public class Message {
+public class MessageResponse {
 
 	private final String message;
 
-	public Message(String message) {
+	public MessageResponse(String message) {
 		this.message = message;
 	}
 
