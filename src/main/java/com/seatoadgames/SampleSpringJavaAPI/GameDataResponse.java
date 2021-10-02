@@ -1,6 +1,7 @@
 package com.seatoadgames.SampleSpringJavaAPI;
 
 import java.util.List;
+import java.util.ArrayList;
 
 public class GameDataResponse {
 
@@ -14,8 +15,10 @@ public class GameDataResponse {
 		this.data = data;
 	}
 
-	public GameData getData() {
-		return data;
+	public Iterable<GameData> getData() {
+		List<GameData> list = new ArrayList<GameData>();
+        list.add(data);
+		return list;
 	}
 
 	public Boolean getError() {
