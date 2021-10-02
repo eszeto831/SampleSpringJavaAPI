@@ -15,4 +15,16 @@ public class UserListResponse {
 	public Iterable<User> getData() {
 		return data;
 	}
+
+	public Boolean getError() {
+		return error;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public String getMessage() {
+		return message;
+	}
 }

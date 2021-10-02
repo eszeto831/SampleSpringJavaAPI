@@ -17,4 +17,16 @@ public class GameDataResponse {
 	public GameData getData() {
 		return data;
 	}
+
+	public Boolean getError() {
+		return error;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public String getMessage() {
+		return message;
+	}
 }
